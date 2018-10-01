@@ -62,3 +62,34 @@ It should be seen the new task added to http://localhost:3000/tasks
 
 ## 4. API
 
+First prototype: `mes_api.py` with basic REST commands.
+Test 1.0:
+
+```sh
+$ python api_tasks_test.py
+REST API TEST 1.0
+
+
+Enter task name: Dog
+Enter task description: Take the dog out for a walk
+New task added with ID: 3
+Task summary: Dog
+
+
+     >> Current task list:
+
+
+Task ID: 1
+Task summary: Shower
+Full description: Take a fucking shower
+
+
+Task ID: 2
+Task summary: Coffee
+Full description: Make some coffee
+
+
+Task ID: 3
+Task summary: Dog
+Full description: Take the dog out for a walk
+```

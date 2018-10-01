@@ -19,8 +19,18 @@ if resp.status_code != 201:                                     # check status
     raise ApiError('POST /tasks/ {}'.format(resp.status_code))
 print('New task added with ID: {}'.format(resp.json()["id"]))
 print('Task summary: {}'.format(resp.json()["summary"]))
-
 print "\n"
+
+# Add a new task to the list
+ss2 = raw_input("Enter task name: ")
+dd2 = raw_input("Enter task description: ")
+resp = mes_api.new_order(_uri, _path, ss1, dd1)                 # add task
+if resp.status_code != 201:                                     # check status
+    raise ApiError('POST /tasks/ {}'.format(resp.status_code))
+print('New task added with ID: {}'.format(resp.json()["id"]))
+print('Task summary: {}'.format(resp.json()["summary"]))
+print "\n"
+
 print "     >> Current task list:"
 print "\n"
 

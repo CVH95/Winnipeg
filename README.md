@@ -12,6 +12,8 @@
     - MES API example in Python.
     - Application of the API to interact with the server with (api\_tasks_test.py)
 
+ Client handled with **Python Requests Library.**
+
 ## 2. Setting up.
 
 1.1. To install json sever for trials:

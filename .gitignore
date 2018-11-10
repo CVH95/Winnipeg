@@ -1,2 +1,2 @@
 # Ignore .pyc
-mes_api.pyc
+src/RESTClient/mes_api.pyc

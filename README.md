@@ -107,3 +107,22 @@ Task ID: 3
 Task summary: Dog
 Full description: Take the dog out for a walk
 ```
+
+## Note on _.gitignore_
+
+When adding the gitignore file _a posteriori_, the unwanted files need to be untracked first with the command:
+
+```sh
+# Files
+$ git rm --cached <path/to/filename>
+# Folders
+$ git rm -r --cached <path/to/folder/>
+```
+
+Then, add the paths to _.gitignore_ by:
+
+```sh
+$ echo <path/to/filename> > .gitignore
+# and/or
+$ echo <path/to/folder/> > .gitignore
+```
